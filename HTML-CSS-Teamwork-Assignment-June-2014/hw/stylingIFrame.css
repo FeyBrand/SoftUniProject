@@ -1,0 +1,37 @@
+body, div, h1, ifame, a {
+	margin: 0;
+	padding: 0;
+}
+div {
+	margin: 30px auto;
+	width: 480px;
+	height: 225px;
+	padding: 5px 20px;
+	background: #111;
+	border: 1px solid #111;
+	border-radius: 6px;
+	font-family: Arial, sans-serif;
+}
+div h1 {
+	margin-bottom: 10px;
+	color: #ffff00;	
+	text-align: center;
+}
+div iframe {
+	float: left;
+	width: 196px;
+	height: 132px;
+	border: 1px solid #ffff00;
+}
+div ul {
+	float: left;
+}
+div ul li {
+	list-style-type: none;
+}
+div ul li a {
+	color: white;
+	font-size: 22px;
+	font-style: italic;
+	text-decoration: none;
+}
