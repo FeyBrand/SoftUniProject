@@ -12,20 +12,17 @@
 	text-align:center;
 	}
 	</style>
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Smile Uni</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<link href="css/marto.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,61 +31,167 @@
     <![endif]-->
 </head>
 	<body>
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Project name</a>
-				</div>	
-			</div>
-		</div>
+	<div id="navigation" class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top navbar-border" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="images/logo.jpg" height="99%"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Начало</a></li>
+                <li><a href="about-main.html">За нас</a></li>
+                <li><a href="#contact">Контакти</a></li>
+				<li><a href="SmileUni-teachers.html">Преподаватели</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Изберете курс<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">С# Basics</a></li>
+                    <li><a href="#">Java Basics</a></li>
+                    <li><a href="webfundamentals.html">Web Fundamentals</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP Basics</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Hello, people at SoftUni!</h1>
-				<p>This is a site about some funny moments we have at the Software University. We hope that you will enjoy the content of the site. We know it's not much but we are glad of the results we accomplished as a team.</p>
-				<p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-			</div>
-		</div>
+	<div id="myCarousel" class="carousel slide margin5" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+		<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="images/earthheader.jpg" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Ние сме светът</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary"target="_blank" href="https://softuni.bg/" role="button">Пример за подражание!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img src="images/holidayheader.jpg" alt="Fifth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Как си почиваме</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="SmileUni-social.html" role="button">Любопитни ли сте</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/monkeyheader.jpg" alt="Sixth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Ние сме неповторими</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Опитайте и вие</a></p>
+            </div>
+          </div>
+      </div>
+	  <div class="item">
+          <img src="images/babyheader.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>С компютър от люлката</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Наша гордост</a></p>
+            </div>
+          </div>
+       </div>
+	   <div class="item">
+          <img src="images/studyheader.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Трудни домашни</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="SmileUni-homeworks.html" role="button">Не и за нас!</a></p>
+            </div>
+          </div>
+       </div>
+	   <div class="item">
+          <img src="images/smileheader.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h3>Смехът е най-краткото разстояние между двама души!</h3>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="fun.html" role="button">Нека се посмеем</a></p>
+            </div>
+          </div>
+       </div>
+	   </div>
+		
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	<div>
+		<hr class="featurette-divider">
+	</div>
+	<div class="container marketing">
 
-		<div class="container">
-			<article class="row">
-				<section class="col-md-4">
-					<h2>Funny gifs</h2>
-					<img src="images/7psyjK0.gif" alt="Student after exam" height="350" width="350">
-					<figcaption><center>That is how a student looks like after exam.</center><figcaption>
-					<img src="images/assistant-comes-for-help.gif" alt="assistant-comes-for-help" height="350" width="350">
-					<figcaption><center>Student - "Excuse me, can I get some help?"<br>Assistant - "Step aside bi***es!"</br></center><figcaption>
-					<img src="images/feeling-first-try-exam.gif" alt="feeling-feeling-first-try-exam" height="350" width="350">
-					<figcaption>That's the feeling we get when our first try on the exam task doesn't work out so good as the expected.<figcaption>
-					<p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
-				</section>
-				<section class="col-md-4">
-					<h2>Funny videos</h2>
-					<p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
-				</section>
-				<section class="col-md-4">
-					<h2>A couple of jokes</h2>
-					<p></p>
-					<p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
-				</section>
-			</article>
-			<hr>
-			<footer>
-				<p>Team " Feyrbrand<sup>&copy;</sup> " 2014</p>
-			</footer>
-		</div>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          <img class="img-circle" src="images/earthheader-small.jpg" alt="Generic placeholder image" style="width: 130px; height: 130px;">
+          <h4>Елате вие, ние и без това идваме</h4>          
+          <p><a class="btn btn-default" target="_blank" href="https://softuni.bg/" role="button">Виж още »</a></p>
+        </div><!-- /.col-lg-2 -->
+         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          <img class="img-circle" src="images/holidayheader-small.jpg" alt="Generic placeholder image" style="width: 130px; height: 130px;">
+          <h4>Социални умения за програмисти</h4>          
+          <p><a class="btn btn-default" href="SmileUni-social.html" role="button">Виж още »</a></p>
+        </div><!-- /.col-lg-2 -->
+		 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          <img class="img-circle" src="images/monkeyheader-small.jpg" alt="Generic placeholder image" style="width: 130px; height: 130px;">
+          <h4>Що е то програмист</h4>          
+          <p><a class="btn btn-default" href="#" role="button">Виж още »</a></p>
+        </div><!-- /.col-lg-2 -->
+		 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          <img class="img-circle" src="images/babyheader-small.jpg" alt="Generic placeholder image" style="width: 130px; height: 130px;">
+          <h4>Децата и компютрите</h4>          
+          <p><a class="btn btn-default" href="#" role="button">Виж още »</a></p>
+        </div><!-- /.col-lg-2 -->
+		 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          <img class="img-circle" src="images/studyheader-small.jpg" alt="Generic placeholder image" style="width: 130px; height: 130px;">
+          <h4>Кратки и коректни пищови</h4>          
+          <p><a class="btn btn-default" href="SmileUni-homeworks.html" role="button">Виж още »</a></p>
+        </div><!-- /.col-lg-2 -->
+		 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          <img class="img-circle" src="images/smileheader-small.jpg" alt="Generic placeholder image" style="width: 130px; height: 130px;">
+          <h4>Смешки оттук-оттам</h4>          
+          <p><a class="btn btn-default" href="fun.html" role="button">Виж още »</a></p>
+        </div><!-- /.col-lg-2 -->
+      </div><!-- /.row -->
+	  
+	<hr class="featurette-divider">
 
+     
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 FeybrandCo, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
 
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+    </div>
 	</body>
 </html>
